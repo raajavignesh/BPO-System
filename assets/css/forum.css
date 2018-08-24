@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.tablink {
+    background-color: #90A4AE;
+    color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: auto;
+    font-size: 14px;
+    width: auto;
+}
+
+.tablink:hover {
+    background-color: #CFD8DC;
+}
+
+
+.tabcontent {
+    color: #37474f;
+    background-color: #CFD8DC;
+    display: none;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+ 
+.back-to-top {
+ 
+background: none;
+ 
+margin: 0;
+ 
+position: fixed;
+ 
+bottom: 0;
+ 
+right: 0;
+ 
+width: 70px;
+ 
+height: 70px;
+ 
+z-index: 100;
+ 
+display: none;
+ 
+text-decoration: none;
+ 
+color: #ffffff;
+ 
+background-color: #ff9000;
+ 
+}
+ 
+  
+ 
+.back-to-top i {
+ 
+  font-size: 60px;
+ 
+}
+
+.pb-modalreglog-container
+{
+    margin-top: 100px;
+}
+
+.pb-modalreglog-legend
+{
+    text-align: center;
+}
+
+.pb-modalreglog-input-group
+{
+    margin: auto;
+}
+
+.pb-modalreglog-submit
+{
+    margin-left: 5px;
+}
+
+.pb-modalreglog-form-reg
+{
+    text-align: center;
+}
+
+.pb-modalreglog-footer p
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pb-modalreglog-progressbar
+{
+    border-radius: 2px;
+}
