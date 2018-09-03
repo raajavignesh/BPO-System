@@ -1,3 +1,8 @@
+<?php
+    include_once './includes/dbh.inc.php';
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,18 +52,20 @@
                     <a href="contact.php" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item ml-1">
-                    <a href="contact.php" class="nav-link">Login/Register</a>
+                    <a href="login.php" class="nav-link">Login/Register</a>
                 </li>
                 
-                <li class="nav-item dropdown ml-1">
-                    <a href="#" class="nav-link dropdown-toggle" id="dropdown_target" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">hello,user</a>
-                    <span class="caret"></span>
-                    <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                <li class="nav-item dropdown ml-1 mr-2">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdown_target" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello,User<?php //echo $_SESSION['user_name'];?>
+                    <span class="caret"></span></a>
+                    <div class="dropdown-menu mt-2" aria-labelledby="dropdown_target" style="">
                         <a class="dropdown-item text-primary" href="#"><i class="fas fa-user-cog"></i>Profile</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">My Products</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <form action="./includes/logout.inc.php" name="logout" method="post">
+                        <a class="dropdown-item"><button type="submit" name="submit"  style="background:none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;">Logout</button></a>
+                        </form>
                     </div>
                 </li>
             </ul>

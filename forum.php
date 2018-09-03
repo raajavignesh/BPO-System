@@ -18,7 +18,7 @@ if(isset($_POST['submitForm'])) {
     if($question != "") {
         $sql = "INSERT INTO tbl_forum_question (`user_id`, `user_name`, question, tags) VALUES ('$session_user_id', '$session_user_name', '$question', '$tags')";
         if ($conn->query($sql) === TRUE) {
-            echo '<script>window.location.href="index.php"</script>';
+            echo '<script>window.location.href="forum.php"</script>';
         }
     }
 }
@@ -31,13 +31,18 @@ if(isset($_POST['answerForm'])) {
     if($answer != "") {
         $sql = "INSERT INTO tbl_forum_answer (`user_id`,`user_name`, question_id, answer) VALUES ('$session_user_id', '$session_user_name', '$ques_id', '$answer')";
         if ($conn->query($sql) === TRUE) {
-            echo '<script>window.location.href="index.php"</script>';
+            echo '<script>window.location.href="forum.php"</script>';
         }
     }
 }
 ?>
 
 <div class="container-fluid" style="padding:100px 40px ">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-primary"> Forum</h3>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <div class="row">

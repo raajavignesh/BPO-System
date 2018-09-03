@@ -17,7 +17,7 @@
         </div>
         <div class="submit">
             <h3>Login</h3>
-            <form id="loginForm" action="includes/login.inc.php" method="POST">
+            <form id="loginForm" action="./includes/login.inc.php" method="POST">
                 <div class="full">
                     <label><i class="fa fa-envelope"></i> Email</label>
                     <input type="email" name="emailid" id="emailid">
@@ -27,10 +27,10 @@
                     <input type="password" name="pwd0" id="pwd">
                 </div>
                 <div class="full">
-                    <button type="submit">LOGIN</button>
+                    <button type="submit" name="submit">LOGIN</button>
                 </div>
                 <div class="full">
-                    <label>Not a member ?<a href="register.php">Register here</a></label>
+                    <label>Not a member? &nbsp;<a href="register.php">Register here</a></label>
                 </div>
             </form>
         </div>
