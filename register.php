@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <label><i class="fa fa-phone"></i> Mobile</label>
-                    <input type="text" name="phone">
+                    <input type="number" name="phone">
                 </div>
                 <div>
                     <label><i class="fa fa-envelope"></i> Email</label>

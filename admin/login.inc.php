@@ -16,7 +16,7 @@ if(isset($_POST['submit'])) {
             exit();
         }
         else {
-            $sql1 = "select user_id, user_name, user_email, user_mobile from tbl_users where user_email = '".$user_email."'";
+            $sql1 = "select user_id, user_name, user_email, user_mobile from tbl_users where user_name = '".$user_name."'";
             $result1 = mysqli_query($conn, $sql1);
             $row1 = mysqli_fetch_array($result1);
             $_SESSION['user_id'] = $row1['user_id'];

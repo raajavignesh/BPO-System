@@ -37,7 +37,7 @@ if(isset($_POST['answerForm'])) {
 }
 ?>
 
-<div class="container-fluid" style="padding:100px 40px ">
+<div class="container-fluid" style="padding:20px 40px 20px 40px">
     <div class="row">
         <div class="col">
             <h3 class="text-primary"> Forum</h3>
