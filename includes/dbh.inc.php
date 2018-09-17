@@ -1,11 +1,14 @@
 <?php
 
-$dbservername = "localhost";
-$dbusername = "root";
-$dbpwd = "";
-$dbname = "bpo";
 
-$conn = mysqli_connect($dbservername, $dbusername, $dbpwd, $dbname);
+define("DB_HOST", "localhost");
+define("DB_NAME", "bpo");
+define("DB_USER", "root");
+define("DB_PASS", "");
+
+define("MAX_SIZE_ALLOWED", 1048576); 
+
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 if($conn == false)
 {
